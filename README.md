@@ -7,8 +7,7 @@ This action provides an integration for auto-publishing documentation on Github 
 To use this action, add the following to your workflow file:
 
 ```yaml
-- uses: actions/upload-pages-artifact@master
+- uses: caffeinum/forge-doc-gh-pages@main
 ```
 
-You also need to enable Github Actions in your Pages configuration:
-/settings/pages
+You also need to enable Github Actions in your Pages configuration.
