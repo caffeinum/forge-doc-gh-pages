@@ -18,6 +18,8 @@ jobs:
   # ... other jobs ...
 
   build-gh-pages:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     # from https://github.com/actions/deploy-pages
@@ -29,11 +31,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-      
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Upload Forge docs to GitHub Pages
         uses: caffeinum/forge-doc-gh-pages@main
