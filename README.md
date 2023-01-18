@@ -35,10 +35,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-
-      - uses: caffeinum/forge-doc-gh-pages@v0.1
+      - name: Upload Forge docs to GitHub Pages
+        uses: caffeinum/forge-doc-gh-pages@main
 ```
 
 You also need to enable Github Actions in your Pages configuration.
